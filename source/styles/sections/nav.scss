@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+
+  padding-top: 24px;
+
+  &__logo {
+
+
+    margin-right: 105px;
+    border-right: 3px solid #00d646;
+    height: 25px;
+    width: 50px;
+  }
+
+  &__logo--text {
+    text-decoration: none;
+    color: #00d646;
+    padding: 3px;
+    line-height: 1rem;
+    font-size: 1.4rem;
+  }
+
+  &__menu {
+
+  }
+
+  &__link {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #939dab;
+    font-size: 0.8rem;
+
+    &:hover {
+      color: #00d646;
+    }
+
+    :first-child {
+      padding-left: 0;
+    }
+    
+    &--active {
+      color: #00d646;
+    }
+  }
+
+
+
+}
