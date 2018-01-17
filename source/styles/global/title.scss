@@ -1,0 +1,16 @@
+.title {
+
+  &--with--bottom--line {
+    position: relative;
+    margin-bottom: 44px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -15px;
+      height: 7px;
+      width: 52px;
+      background: #df3143;
+    }
+  }
+}
