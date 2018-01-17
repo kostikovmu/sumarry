@@ -1,0 +1,19 @@
+.hero {
+  text-align: center;
+  //height: 600px;
+  margin-top: 200px;
+  
+  &__title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.02rem;
+  }
+
+  &__description {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+  }
+
+}
