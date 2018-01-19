@@ -1,15 +1,64 @@
 .skills{
 
+
+  &__title {
+
+  }
+
+
+
   &__background {
     background-image: url(../../images/skills-bg.jpg);
     background-color: #6f7a8a;
     background-size: cover;
     background-repeat:no-repeat;
-    height: 100%;
+    height: 900px;
     width: 100%;
     position: fixed;
     margin: 0;
     padding: 0;
-    z-index:-999;
+    z-index:-99;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+
+  &__wrap {
+    width: 313px;
+    height: 313px;
+    background-color: #edeff5;
+    display: flex;
+    transition: 0.5s;
+
+    &:nth-child(2n) {
+      background-color: #bbc8dd;
+    }
+
+    &:hover {
+      background-color: darken(#bbc8dd, 15);
+    }
+    
+
+  }
+  &__item {
+    margin:auto;
+    text-align: center;
+
+
+
+    &__title {
+      margin: 0;
+    }
+
+    &__description {
+      font-size: 2rem;
+      color: #df3143;
+      font-family:$ff-main-bold;
+      margin: 15px 0 0 0;
+    }
   }
 }

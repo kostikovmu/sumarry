@@ -1,0 +1,15 @@
+-
+  var list = {
+    'HTML & CSS':'Продвинутый',
+    'SASS & PUG':'Продвинутый',
+    'Java Script':'Продвинутый',
+    'PhotoShop':'Продвинутый',
+    'Bootstrap':'Продвинутый',
+    'English':'Продвинутый'
+  };
+
+each item, index in list
+  .skills__wrap
+    .skills__item
+      h4.skills__item__title= index
+      p.skills__item__description= item
