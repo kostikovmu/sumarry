@@ -1,0 +1,15 @@
+.skills{
+
+  &__background {
+    background-image: url(../../images/skills-bg.jpg);
+    background-color: #6f7a8a;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index:-999;
+  }
+}

@@ -1,4 +1,8 @@
 .title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin:0;
+  font-family: $ff-main-bold;
 
   &--with--bottom--line {
     position: relative;
