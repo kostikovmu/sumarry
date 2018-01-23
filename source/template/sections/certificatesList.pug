@@ -1,0 +1,30 @@
+-
+  var list = {
+    'CSS':'yandex.ru',
+    'HTML':'mail.ru',
+    'JavaScript': 'http://google.com',
+    'Photoshop': 'http://google.com'
+  };
+-
+  var dates = {
+  'CSS':'23.01.2018',
+  'HTML':'21.01.2018',
+  'JavaScript': '22.02.2018',
+  'Photoshop': '28.02.2018'
+  };
+-
+  var points = {
+  'CSS':'28/30',
+  'HTML':'80/89',
+  'JavaScript': '10/14',
+  'Photoshop': '19/24'
+  };
+
+each item, index in list
+  .certificates__item
+    .certificates__panel.box-shadow
+      .certificates__title= index
+      .certificates__description= item
+      .certificates__label= dates[index]
+      .certificates__label= points[index]
+
