@@ -1,0 +1,21 @@
+// Font paths
+// -------------------------
+
+@font-face {
+  font-family: "conditions-mySite";
+  src: url("../../fonts/conditions-mySite.eot");
+  src: url("../../fonts/conditions-mySite.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/conditions-mySite.woff2") format("woff2"),
+       url("../../fonts/conditions-mySite.woff") format("woff"),
+       url("../../fonts/conditions-mySite.ttf") format("truetype"),
+       url("../../fonts/conditions-mySite.svg#conditions-mySite") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "conditions-mySite";
+    src: url("../../fonts/conditions-mySite.svg#conditions-mySite") format("svg");
+  }
+}
