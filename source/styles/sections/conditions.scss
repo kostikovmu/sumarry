@@ -1,0 +1,50 @@
+$con_m-r: 16px;
+
+.conditions {
+  padding: 90px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  &__wrap {
+    height: 270px;
+    width: ($max-width - $con_m-r*2)/3;
+    background-color:#bbc8dd;
+    margin: 0 $con_m-r $con_m-r 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: .3s;
+
+    &:nth-child(3n) {
+      margin: 0 0 $con_m-r 0;
+    }
+
+    &:hover {
+      background-color:darken(#bbc8dd, 10%);
+
+      & i {
+        color: #df3143;
+      }
+
+    }
+  }
+
+
+  &__item {
+
+    &__title {
+      margin: 0;
+    }
+
+    &__description {
+      font-size: .875rem;
+    }
+  }
+  i {
+    font-size: 4rem;
+  }
+}

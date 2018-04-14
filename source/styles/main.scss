@@ -1,10 +1,12 @@
-@import "global/fonts";
 @import "global/vars";
+@import "global/fonts";
 @import "global/bases";
 @import "global/common";
 @import "global/mixins";
 @import "global/buttons";
 @import "global/title";
+
+
 
 @import "sections/header";
 @import "sections/nav";
@@ -12,3 +14,9 @@
 @import "sections/aboutMe";
 @import "sections/skills";
 @import "sections/education";
+@import "sections/conditions";
+
+@import "icons/variables";
+@import "icons/core";
+@import "icons/path";
+@import "icons/icons";

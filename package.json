@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "fontisto": "^2.0.1",
     "normalize.scss": "^0.1.0"
   }
 }
