@@ -1,0 +1,51 @@
+.portfolio {
+
+  &__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: $max-width/2;
+    position: relative;
+
+    &:hover .portfolio__wrap{
+      opacity: 1;
+    }
+  }
+
+  &__img {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 25px;
+    transition: .3s;
+  }
+  &__text {
+    text-align: center;
+    margin:auto;
+    color: #fff;
+  }
+  &__title {
+    font-size:1.4rem;
+    font-family: $ff-main-bold;
+  }
+
+  &__description {
+    font-size:.9rem;
+  }
+}
