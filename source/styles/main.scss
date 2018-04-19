@@ -1,3 +1,5 @@
+@import "../../node_modules/fontisto/sass/fontisto/fontisto";
+
 @import "global/vars";
 @import "global/fonts";
 @import "global/bases";
@@ -17,6 +19,7 @@
 @import "sections/conditions";
 @import "sections/portfolio";
 @import "sections/contacts";
+@import "sections/footer";
 
 @import "icons/variables";
 @import "icons/core";

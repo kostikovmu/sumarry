@@ -1,0 +1,21 @@
+-
+  var list = {
+    'img': {
+      'item1':'fi fi-github',
+      'item2':'fi fi-codepen',
+      'item3':'fi fi-stack-overflow'
+    },
+    'src': {
+      'item1':'https://github.com/kostikovmu',
+      'item2':'https://codepen.io/kostikovmu/',
+      'item3':'https://ru.stackoverflow.com/users/294401/kostikovmu'
+    }
+  }
+
+
+footer.footer
+    .footer__list
+      each item, index in list.src
+        a.footer__item(href= item): i(class= list.img[index] aria-hidden="true")
+
+
