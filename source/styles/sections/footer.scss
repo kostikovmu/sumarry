@@ -1,19 +1,21 @@
 .footer {
   background-color: #bfc4d4;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  padding: 15px 0;
+  color: #727272;
 
 
   &__list {
-    font-size: 2rem;
-    margin: 10px 0;
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
   }
 
   &__item {
-    color: #000;
     display: inline;
     margin-right:50px;
+    color: #727272;
 
     &:last-child {
       margin-right:0;
@@ -22,6 +24,11 @@
     &:hover {
       color: lighten(#000, 22%);
     }
+  }
+  
+  &__text {
+    text-align: center;
+    margin-bottom:0;
   }
 
 }
