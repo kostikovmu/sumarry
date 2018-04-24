@@ -9,6 +9,11 @@
       'item1':'https://github.com/kostikovmu',
       'item2':'https://codepen.io/kostikovmu/',
       'item3':'https://ru.stackoverflow.com/users/294401/kostikovmu'
+    },
+    'title':{
+      'item1':'Мой аккаунт на GitHub',
+      'item2':'Мой аккаунт на CodePen',
+      'item3':'Мой аккаунт на StackOverFlow'
     }
   }
 
@@ -16,7 +21,7 @@
 footer.footer
     .footer__list
       each item, index in list.src
-        a.footer__item(href= item): i(class= list.img[index] aria-hidden="true")
+        a.footer__item(href= item title= list.title[index]): i(class= list.img[index] aria-hidden="true" )
     p.footer__text Костиков Михаил 2018
 
 

@@ -131,10 +131,10 @@
 
   &__label {
     padding:0px 5px;
-    background-color: #df3143;
+    background-color: #ffd500;
     margin-top: 15px;
     font-size: 0.75rem;
-    color: #fff;
+    color: #000;
     display: inline-block;
     position: relative;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
@@ -145,7 +145,7 @@
       content: '';
       height: 0;
       width: 0;
-      border-bottom: 7px solid #df3143;
+      border-bottom: 7px solid #ffd500;
       border-left: 7px solid transparent;
       position: absolute;
       top: -7px;

@@ -1,4 +1,9 @@
+$portfolio-mr: 20px;
+
 .portfolio {
+
+  padding:90px 0;
+  background-color: #ff9cb6;
 
   &__list {
     margin-top: 30px;
@@ -7,8 +12,15 @@
   }
 
   &__item {
-    width: $max-width/2;
+    width: $max-width/3 - $portfolio-mr;
     position: relative;
+    border: 7px solid coral;
+    margin-right: $portfolio-mr;
+    margin-bottom: 30px;
+
+    &:nth-child(3n){
+      margin-right:0;
+    }
 
     &:hover .portfolio__wrap{
       opacity: 1;

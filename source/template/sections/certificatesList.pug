@@ -1,30 +1,32 @@
 -
-  var list = {
-    'CSS':'yandex.ru',
-    'HTML':'mail.ru',
-    'JavaScript': 'http://google.com',
-    'Photoshop': 'http://google.com'
+  var src = {
+    'HTML, CSS':'http://testprovider.com/ru/Certificate/Search/TP68276893',
+    'JavaScript Essential':'http://testprovider.com/ru/Certificate/Search/TP04102470',
+    'JavaScript Advanced': 'http://testprovider.com/ru/Certificate/Search/TP60029759',
+    'Adobe Photoshop': 'https://netology.ru/sertificate/1106325?p=1&stop=1'
   };
 -
   var dates = {
-  'CSS':'23.01.2018',
-  'HTML':'21.01.2018',
-  'JavaScript': '22.02.2018',
-  'Photoshop': '28.02.2018'
+  'HTML, CSS':'08.02.2018',
+  'JavaScript Essential':'04.03.2018',
+  'JavaScript Advanced': '17.03.2018',
+  'Adobe Photoshop': '26.03.2018'
   };
 -
   var points = {
-  'CSS':'28/30',
-  'HTML':'80/89',
-  'JavaScript': '10/14',
-  'Photoshop': '19/24'
+  'HTML, CSS':'892/1000',
+  'JavaScript Essential':'950/1000',
+  'JavaScript Advanced': '875/1000',
+  'Adobe Photoshop': '14/15'
   };
 
-each item, index in list
+each item, index in src
   .certificates__item
     .certificates__panel.box-shadow
       .certificates__title= index
-      .certificates__description= item
+      //a.certificates__description(href= item)= 'Ссылка'
+      .certificates__label: a(href= item target= 'blank')= 'Ссылка'
       .certificates__label= dates[index]
       .certificates__label= points[index]
+
 

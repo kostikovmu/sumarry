@@ -19,7 +19,12 @@
     display: flex;
 
     &__description {
-      padding-right: 85px;
+      width: $max-width/2;
+      margin-right:100px;
+
+      &:last-child {
+        margin-right:0;
+      }
     }
   }
 }

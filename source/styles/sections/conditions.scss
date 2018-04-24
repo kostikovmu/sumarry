@@ -11,7 +11,7 @@ $con_m-r: 16px;
   }
 
   &__wrap {
-    height: 270px;
+    height: 250px;
     width: ($max-width - $con_m-r*2)/3;
     background-color:#bbc8dd;
     margin: 0 $con_m-r $con_m-r 0;
@@ -41,7 +41,8 @@ $con_m-r: 16px;
     }
 
     &__description {
-      font-size: .875rem;
+      font-size: .850rem;
+      margin-top: 5px;
     }
   }
   i {

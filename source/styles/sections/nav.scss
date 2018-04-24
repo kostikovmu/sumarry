@@ -10,14 +10,13 @@
 
 
     margin-right: 105px;
-    border-right: 3px solid #00d646;
-    height: 25px;
-    width: 50px;
+    border-bottom: 3px solid #ffd500;
+    height: 30px;
   }
 
   &__logo--text {
     text-decoration: none;
-    color: #00d646;
+    color: #ffd500;
     padding: 3px;
     line-height: 1rem;
     font-size: 1.4rem;
@@ -35,7 +34,7 @@
     font-size: 0.8rem;
 
     &:hover {
-      color: #00d646;
+      color: #ffd500;
     }
 
     :first-child {
@@ -43,7 +42,7 @@
     }
     
     &--active {
-      color: #00d646;
+      color: #ffd500;
     }
   }
 
