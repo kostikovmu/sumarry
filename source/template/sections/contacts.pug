@@ -1,4 +1,4 @@
-section.communication
+section.communication#contacts
   .container
     .communication__flex--container
       .communication__feedback
@@ -8,10 +8,10 @@ section.communication
         .communication__container
           form.communication__form
             .communication__form__fields
-              input(type='text' required='required' placeholder='Ваш контактный телефон или Email *').communication__form__input
-              textarea(type='text' placeholder='Сообщение').communication__form__input.communication__form__message
-
-            button(type='submit').button--form Отправить
+              input(type='text' name='contact' required='required' placeholder='Ваш контактный телефон или Email *').communication__form__input
+              textarea(type='text' name='text' placeholder='Сообщение').communication__form__input.communication__form__message
+            input(type='submit' value='Отправить').button--form
+            .msg
 
       .communication__contacts
         .title--with--bottom--line

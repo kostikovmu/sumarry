@@ -1,8 +1,9 @@
 -var items = ['главная', 'портфолио', 'навыки', 'сертификаты', 'Условия', 'Контакты']
+-var links = ['#header', '#portfolio', '#skills', '#certificates', '#conditions', '#contacts']
 .nav__logo: a.nav__logo--text(href='#') км
 .nav__menu
-  each item in items
+  each item, index in items
     if item === 'главная'
-      a.nav__link.nav__link--active(href='#')= item
+      a.nav__link.nav__link--active(href=links[index])= item
     else
-      a.nav__link(href='#')= item
+      a.nav__link(href=links[index])= item

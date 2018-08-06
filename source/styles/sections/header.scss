@@ -1,8 +1,15 @@
 .header {
-  z-index:999;
+
+
+  &__nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index:999;
+  }
 
   &__background {
-    //background-image: url(../../images/hero-bg.jpg);
+    background-image: url(../../images/natural-forest-snow-mountainous-black.jpg);
     background-color: #6f7a8a;
     background-size: cover;
     background-repeat:no-repeat;
