@@ -16,15 +16,9 @@
   }
 
   &__text {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
 
-    &__description {
-      width: $max-width/2;
-      margin-right:100px;
-
-      &:last-child {
-        margin-right:0;
-      }
-    }
   }
 }

@@ -7,20 +7,16 @@ $portfolio-mr: 20px;
 
   &__list {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
   }
 
   &__item {
     width: $max-width/3 - $portfolio-mr;
     position: relative;
     border: 7px solid coral;
-    margin-right: $portfolio-mr;
-    margin-bottom: 30px;
-
-    &:nth-child(3n){
-      margin-right:0;
-    }
+    margin: auto;
 
     &:hover .portfolio__wrap{
       opacity: 1;
@@ -59,5 +55,29 @@ $portfolio-mr: 20px;
 
   &__description {
     font-size:.9rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .portfolio {
+
+
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__wrap {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .portfolio {
+
+
+    &__list {
+      grid-template-columns: 1fr;
+    }
   }
 }

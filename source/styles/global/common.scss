@@ -11,3 +11,9 @@
     box-shadow: 2px 7px 13px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
 }
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 94%;
+  }
+}
