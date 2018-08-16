@@ -34,6 +34,7 @@
 each item, index in list
   .conditions__wrap
     .conditions__item
-      i(class= icons[index])
-      h4.conditions__item__title= index
+      .conditions__item__header
+        i.conditions__item__icon(class= icons[index])
+        .conditions__item__title: h4= index
       p.conditions__item__description= item
