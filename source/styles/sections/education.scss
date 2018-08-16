@@ -103,10 +103,6 @@
           top: 20px;
       }
     }
-
-
-
-
   }
 
   &__panel {
@@ -151,7 +147,19 @@
       top: -7px;
       right: 0;
     }
+  }
+}
 
-    
+@media (max-width: 660px) {
+  .certificates {
+
+    &__item {
+      float: none;
+      width: 95%;
+
+      &:nth-child(2n) {
+        float: none;
+      }
+    }
   }
 }
