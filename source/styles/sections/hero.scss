@@ -20,3 +20,18 @@
   }
 
 }
+
+@media(max-width: 660px) {
+  .hero {
+
+    &__title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    &__description {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+}

@@ -22,3 +22,14 @@
 
   }
 }
+
+@media(max-width: 660px) {
+
+  .aboutMe {
+
+    &__text {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+  }
+}
