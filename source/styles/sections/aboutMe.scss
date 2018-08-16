@@ -1,8 +1,7 @@
 .aboutMe {
-  height: 500px;
   background-color: #edeff5;
   margin: 34px 0 0 0;
-  padding: 190px 0 0 0;
+  padding: 190px 0 140px 0;
 
   &__photo {
 
@@ -26,6 +25,8 @@
 @media(max-width: 660px) {
 
   .aboutMe {
+
+    padding-bottom: 30px;
 
     &__text {
       grid-template-columns: 1fr;
