@@ -6,9 +6,9 @@ const spritesmith     = require('gulp.spritesmith');
 const rimraf          = require('rimraf');
 const rename          = require('gulp-rename');
 const uglify          = require('gulp-uglify');
-const concat          = require('gulp-concat')
+const concat          = require('gulp-concat');
 const sourcemaps      = require('gulp-sourcemaps');
-
+const imagemin        = require('gulp-imagemin');
 
 /* -------- Server  -------- */
 gulp.task('server', function() {
@@ -64,7 +64,6 @@ gulp.task('js:libs', function () {
     .pipe(sourcemaps.init())
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 
 });
@@ -93,7 +92,7 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest('build/fonts'));
 });
 
-/* ------------ Copy images ------------- */
+/* ------------ Min&Copy images ------------- */
 gulp.task('copy:images', function() {
   return gulp.src('./source/images/**/*.*')
     .pipe(gulp.dest('build/images'));
@@ -106,8 +105,15 @@ gulp.task('copy:php', function () {
     .pipe(gulp.dest('build/php'));
 });
 
+/* ------------ Copy system ------------- */
+
+gulp.task('copy:system', function () {
+  return gulp.src('./source/system/.htaccess')
+    .pipe(gulp.dest('build'));
+});
+
 /* ------------ Copy ------------- */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'js:libs'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'js:libs', 'copy:images', 'copy:system', 'copy:php'));
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {
