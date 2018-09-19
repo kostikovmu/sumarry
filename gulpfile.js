@@ -88,7 +88,7 @@ gulp.task('clean', function del(cb) {
 
 /* ------------ Copy fonts ------------- */
 gulp.task('copy:fonts', function() {
-  return gulp.src('./source/fonts/**/*.*')
+  return gulp.src(['./source/fonts/**/*.*', 'node_modules/fontisto/fonts/**/*.*'])
     .pipe(gulp.dest('build/fonts'));
 });
 
